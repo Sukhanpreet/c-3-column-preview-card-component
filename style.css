@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px 0px;
+    margin: auto;
+    color: hsla(0, 0%, 100%, 0.75);
+    background: hsl(0, 0%, 95%);
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 300px;
+    padding: 40px;
+}
+
+img {
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 30px;
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.button {
+    padding: 20px;
+    width: 70%;
+    background: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.div1 {
+    background: hsl(31, 77%, 52%);
+}
+
+.div2 {
+    background: hsl(184, 100%, 22%);
+}
+
+.div3 {
+    background: hsl(179, 100%, 13%);
+}
+
+.div1>.button {
+    color: hsl(31, 77%, 52%);
+}
+
+.div2>.button {
+    color: hsl(184, 100%, 22%);
+}
+
+.div3>.button {
+    color: hsl(179, 100%, 13%);
+}
+
+.div1>.button:hover {
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.div2>.button:hover {
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.div3>.button:hover {
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+
+@media (min-width: 900px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        width: 950px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    p {
+        margin-bottom: 60px;
+    }
+}
